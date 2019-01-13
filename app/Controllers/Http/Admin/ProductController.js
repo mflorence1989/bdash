@@ -1,8 +1,8 @@
 'use strict'
 
 class ProductController {
-  index(){
-    return 'this is the products page'
+  index({view}){
+    return  view.render('admin/products/all')
   }
   store(){
 
